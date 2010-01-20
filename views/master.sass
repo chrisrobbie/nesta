@@ -14,7 +14,7 @@
   padding: 0
 
 #container
-  margin: 1em 1em 2em 1em
+  margin: 0em 1em 2em 1em
   min-width: 54em
 
 #wrapper
@@ -27,7 +27,7 @@
   margin-right: 13em
   border-right: 1px solid #ccc
   padding-right: 1em
-
+  
 body.home #sidebar
   margin-top: 0.8em
 
@@ -96,10 +96,11 @@ h1, h2, h3, h4, h5, h6
 
 body.home
   h1
-    padding-bottom: 0.5em
-    border-bottom: #aaa 1px solid
+    padding-top: 0.25em
+    padding-bottom: 0.25em
 
-    color = !base_color
+    color: white
+    background-color = !base_color
 
     text-align: center
     font-size: 300%
@@ -112,10 +113,16 @@ h2.articles
   font-size: 120%
 
 div.breadcrumb
+  padding: 0.5em
   margin-bottom: 2em
+  background-color = !base_color
+  color: white
   
   font-size: 80%
   font-family = !sans_serif
+  
+  a
+    color: white
   
 div.date
   margin-top: 1.5em
@@ -216,7 +223,7 @@ div.date
             color: black
 
 h1
-  margin: 0 0 0.5em 0
+  margin: 0 0 0 0
   
   font-size: 220%
   letter-spacing: -1px

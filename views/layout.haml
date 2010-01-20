@@ -11,6 +11,10 @@
     %link{ :href => "/articles.xml", :rel => "alternate", :type => "application/atom+xml" }
   %body{ :class => @body_class }
     #container
+      #header
+        %h1
+          = @heading
+          %small= @subtitle
       #wrapper
         = yield
 
